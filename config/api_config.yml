@@ -1,0 +1,29 @@
+host: https://hxapi.shyunhua.com
+study_host: http://127.0.0.1:8099
+longlukou_host: http://47.101.48.192:8002
+
+HX_Manage:
+  name: 河西统一后台管理系统登录接口
+  methon: POST
+  url: /Manage/login
+  data:
+    username: admin
+    password: 123456
+  expected:
+    code: 0
+
+Study_Manage:
+  NET:
+    name: 学生信息管理系统新增接口
+    method: POST
+
+LongLuKou_Manage:
+  login:
+    name: 龙路口桥梁管理平台
+    method: POST
+    path: /api/login
+    data:
+      username: admin
+      password: 123456
+    headers:
+      Content-Type: application/json;charset=UTF-8
